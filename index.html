@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>C-FINE TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; background: black; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        video { width: 100%; max-width: 1920px; height: 80vh; background: black; }
+        .menu { display: flex; gap: 20px; margin: 10px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #222; color: white; border: none; border-radius: 5px; }
+        button:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+    <video id="player" controls autoplay>
+        <source src="https://stream.berosat.live:19360/finesse-monde/finesse-monde.m3u8" type="application/x-mpegURL">
+        Votre navigateur ne supporte pas le lecteur vidéo.
+    </video>
+
+    <div class="menu">
+        <button onclick="changeChannel('https://stream.berosat.live:19360/finesse-monde/finesse-monde.m3u8')">Finesse Monde TV</button>
+        <button onclick="changeChannel('http://stream.berosat.live:19360/c-one/c-one.m3u8')">C-One TV</button>
+    </div>
+
+    <script>
+        const player = document.getElementById('player');
+        function changeChannel(url) {
+            player.src = url;
+            player.play();
+        }
+    </script>
+
+</body>
+</html>
