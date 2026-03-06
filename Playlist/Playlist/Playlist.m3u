@@ -1,0 +1,7 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3y76V7S/logo.png" tvg-chno="1", C-ONE TV
+https://stream.berosat.live:19360/c-one/c-one.m3u8
+
+#EXTINF:-1 tvg-id="chaine1" tvg-name="Finesse Monde TV" tvg-logo="https://ibb.co/3mGws26Y/logo.png" tvg-chno="2",FINESSE MONDE TV
+https://stream.berosat.live:19360/finesse-monde/finesse-monde.m3u8
